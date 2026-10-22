@@ -19,7 +19,7 @@ class xrowAdminServerFunctions extends ezjscServerFunctions
             $tpl->setVariable( 'error', 1 );
         }
         
-        $result['template'] = $tpl->fetch( 'design:ezadmin/migration_node_info.tpl' );
+        $result['template'] = $tpl->fetch( 'design:xrowadmin/migration_node_info.tpl' );
         return $result;
     }
 }
