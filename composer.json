@@ -1,19 +1,56 @@
 {
-    "name": "xrow/xrowadmin-ls",
-    "description": "Event extension for eZ Publish",
+    "name": "se7enxweb/xrowadmin",
+    "description": "Administrator and developer tools for Exponential: switch to another user, run SQL, test mail and SOAP, check the system and Solr, move and swap nodes, plus maintenance scripts and cronjob parts.",
     "type": "ezpublish-legacy-extension",
-    "license": "GPL-2.0",
+    "keywords": [
+        "exponential",
+        "exponential-extension",
+        "ezpublish-legacy",
+        "admin",
+        "administration",
+        "developer-tools",
+        "system-check",
+        "maintenance",
+        "switch-user"
+    ],
+    "homepage": "https://github.com/se7enxweb/xrowadmin",
+    "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "xrow GmbH",
-            "homepage": "http://www.xrow.com"
+            "homepage": "https://www.xrow.com",
+            "role": "Original author"
+        },
+        {
+            "name": "Björn Dieding",
+            "email": "bjoern@xrow.de",
+            "role": "Developer"
+        },
+        {
+            "name": "Kristina Ebel",
+            "email": "kristina@xrow.de",
+            "role": "Developer"
+        },
+        {
+            "name": "7x",
+            "email": "info@se7enx.com",
+            "homepage": "https://se7enx.com",
+            "role": "Maintainer"
         }
     ],
-    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://github.com/se7enxweb/xrowadmin/issues",
+        "source": "https://github.com/se7enxweb/xrowadmin"
+    },
     "require": {
-        "ezsystems/ezpublish-legacy-installer": "*"
+        "php": ">=8.0",
+        "se7enxweb/exponential-legacy-installer": "^2.0"
+    },
+    "suggest": {
+        "se7enxweb/ezfind": "The Solr test view (admin/solrcheck) sends its queries through eZ Find."
     },
     "extra": {
-        "ezpublish-legacy-extension-name": "xrowadmin"
+        "ezpublish-legacy-extension-name": "xrowadmin",
+        "installer-name": "xrowadmin"
     }
 }

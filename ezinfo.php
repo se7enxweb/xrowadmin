@@ -1,22 +1,22 @@
 <?php
 /**
- * File containing the adminInfo class.
+ * File containing the xrowadminInfo class.
  *
- * @package ezadmin
- * @version //autogentag//
- * @copyright Copyright (C) 2007 xrow. All rights reserved.
- * @license http://www.gnu.org/licenses/gpl.txt GPL License
+ * @package xrowadmin
+ * @copyright Copyright (C) 2004 - 2017 xrow GmbH, Copyright (C) 1998 - 2026 7x
+ * @license GNU General Public License v2.0 (or any later version)
  */
-class ezadminInfo
+class xrowadminInfo
 {
-    function info()
+    public static function info()
     {
         return array(
-            'Name' => "eZ Publish admin extension",
-            'Version' => "1.0",
-            'Copyright' => "Copyright (C) 2007 xrow GbR",
-            'Author' => "xrow GbR",
-            'License' => "GPL License" );
+            'Name' => "xrow Admin",
+            'Version' => "1.1.2",
+            'Copyright' => "Copyright (C) 2004 - 2017 xrow GmbH, Copyright (C) 1998 - 2026 7x",
+            'Author' => "xrow GmbH (Björn Dieding, Kristina Ebel), maintained by 7x",
+            'License' => "GNU General Public License v2.0 (or any later version)",
+            'Info_url' => "https://github.com/se7enxweb/xrowadmin"
+        );
     }
 }
-?>
