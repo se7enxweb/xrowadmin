@@ -24,7 +24,8 @@ powerful (the SQL Manager runs any statement), so they belong in a trusted admin
 - PHP 8.0 or later
 - The **ezjscore** extension (shipped with Exponential): the Migration view asks the server for node names
   through it.
-- Optional: **ezfind** for the SOLR Test view, the PHP **curl** extension for the remote content views.
+- Optional: **ezfind** for the SOLR Test view, the PHP **curl** extension for the remote content views, and
+  the PEAR package **Net_FTP** for the FTP upload of the `backup` cronjob part.
 
 ## Installation
 
@@ -308,7 +309,7 @@ See [Known limits](#known-limits) before you schedule `directorycleanup` or `ses
 
 ## Upgrading
 
-From 1.1.1 or earlier: replace the extension directory with the new release, then regenerate the autoloads
+From 1.1.3 or earlier: replace the extension directory with the new release, then regenerate the autoloads
 and clear the caches as in [Installation](#installation). There are no database changes. The Composer
 package is now `se7enxweb/xrowadmin` (the original package was `xrow/xrowadmin-ls`).
 
