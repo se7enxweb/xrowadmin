@@ -16,7 +16,7 @@ class eZBackup
 {
     var $time;
     var $data;
-    function eZBackup( $options = array() )
+    function __construct( $options = array() )
     {
         $this->data['compression'] = 'gzip';
         $this->data = array_merge( $options, $this->data );    

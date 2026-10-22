@@ -9,7 +9,7 @@
  */
 class eZUserAddition
 {
-	function eZUserAddition()
+	function __construct()
 	{
 
 	}

@@ -14,9 +14,9 @@ class eZFTPBackup extends Net_FTP
 {
     var $con;
     var $data_path = 'html/';
-    function eZFTPBackup( $host=null, $port=21, $user=null, $password=null )
+    function __construct( $host=null, $port=21, $user=null, $password=null )
     {
-        parent::NET_FTP( );
+        parent::__construct();
         $this->setHostname( $host );
         $this->setPort( $port );
         $this->setUsername( $user );

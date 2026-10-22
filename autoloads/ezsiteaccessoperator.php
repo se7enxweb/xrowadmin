@@ -2,7 +2,7 @@
 
 class ezSiteAccessOperator
 {
-    function ezSiteAccessOperator()
+    function __construct()
     {
     }
 
