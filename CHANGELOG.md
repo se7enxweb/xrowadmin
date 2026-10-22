@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.3 (2026-10-22)
+
+- Fixed: The classes eZBackup, eZFTPBackup, eZUserAddition and ezSiteAccessOperator have `__construct()`
+  constructors; PHP 8 no longer ran their class-named constructors, so the backups did not set up their
+  options and directories.
+- Updated: The README names the PEAR package Net_FTP that the FTP upload of the backup cronjob part needs.
+
 ## 1.1.2 (2026-10-22)
 
 - Updated: The Admin tab (`[Topmenu_xrowadmin]`) shows the Bootstrap icon `tools` in the admin4 design

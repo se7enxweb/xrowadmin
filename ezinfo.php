@@ -12,7 +12,7 @@ class xrowadminInfo
     {
         return array(
             'Name' => "xrow Admin",
-            'Version' => "1.1.2",
+            'Version' => "1.1.3",
             'Copyright' => "Copyright (C) 2004 - 2017 xrow GmbH, Copyright (C) 1998 - 2026 7x",
             'Author' => "xrow GmbH (Björn Dieding, Kristina Ebel), maintained by 7x",
             'License' => "GNU General Public License v2.0 (or any later version)",
