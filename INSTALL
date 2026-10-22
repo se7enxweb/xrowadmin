@@ -1,6 +1,1 @@
-1) Add the extension to your extension repository
-2) Make sure the name of the extension is "xrowadmin"
-3) Activate the Extension in the site.ini
-4) Run the autoloads
-5) Clear the Cache
-6) Configure it to you needs
+Installation, configuration and usage are described in README.md.
