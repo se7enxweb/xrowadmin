@@ -7,8 +7,8 @@
  * @copyright Copyright (C) 2007 xrow. All rights reserved.
  * @license http://www.gnu.org/licenses/gpl.txt GPL License
  */
-include_once( "extension/ezadmin/classes/ezbackup.php" );
-include_once( "extension/ezadmin/classes/ezftpbackup.php" );
+include_once( "extension/xrowadmin/classes/ezbackup.php" );
+include_once( "extension/xrowadmin/classes/ezftpbackup.php" );
 
 if ( !$isQuiet )
     $cli->output( "Starting processing backup" );
@@ -46,7 +46,7 @@ if ( !$isQuiet )
     $cli->output( "Starting backup files" );
 $backupfiles[] = $backup->backupFiles( $backupdef['Include'] );
 
-$backupConnection =& new eZFTPBackup( 
+$backupConnection = new eZFTPBackup( 
 	$backupini->variable( "BackupSettings" , "Server" ),
 	$backupini->variable( "BackupSettings" , "Port" ),
 	$backupini->variable( "BackupSettings" , "Username" ),
